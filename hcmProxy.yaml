@@ -14,9 +14,6 @@ payload:
   - 'DOMAIN,adblock.turtlecute.org'
   - 'DOMAIN,paileactivist.github.io'
 
-  # Vanced
-  - 'DOMAIN-SUFFIX,vanced.to'
-
   # Bitwarden
   - 'DOMAIN-SUFFIX,bitwarden.net'
   - 'DOMAIN-SUFFIX,bitwarden.com'
