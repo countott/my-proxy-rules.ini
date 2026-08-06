@@ -7,13 +7,6 @@ payload:
 
   # Figma Site
   #- 'DOMAIN-SUFFIX,figma.site'
-
-  # 公司内网
-  #- 'DOMAIN,aliding-log-cn-hangzhou.log.aliyuncs.com'
-  #- 'DOMAIN,beacon-api.aliyuncs.com'
-  #- 'DOMAIN-SUFFIX,log.aliyuncs.com'
-  - 'DOMAIN-SUFFIX,alibaba-inc.com'
-  - 'DOMAIN-SUFFIX,accio.com'
   
   # 醒图
   #- 'DOMAIN,mon.zijieapi.com'
@@ -25,72 +18,10 @@ payload:
   - 'DST-PORT,21115-21119'
   - 'DOMAIN-SUFFIX,rustdesk.com'
 
-  # 微信支付
-  - 'DOMAIN,api.mch.weixin.qq.com'
-  - 'DOMAIN,api2.mch.weixin.qq.com'
-  - 'DOMAIN,payapp.weixin.qq.com'
-  - 'DOMAIN,pay.weixin.qq.com'
-  - 'DOMAIN,action.weixin.qq.com'
-  - 'DOMAIN,fraud.mch.weixin.qq.com'
-  - 'DOMAIN,api.wechatpay.cn'
-  - 'DOMAIN,api2.wechatpay.cn'
-  - 'DOMAIN,payapp.wechatpay.cn'
-  - 'DOMAIN,pay.wechatpay.cn'
-  - 'DOMAIN,action.wechatpay.cn'
-  - 'DOMAIN,fraud.wechatpay.cn'
-  - 'IP-CIDR,1.13.107.253/32,no-resolve'
-  - 'IP-CIDR,1.13.131.49/32,no-resolve'
-  - 'IP-CIDR,1.13.56.97/32,no-resolve'
-  - 'IP-CIDR6,2402:4e00:c020:1800::1d/128,no-resolve'
-  - 'IP-CIDR6,2402:4e00:c023:fe00::12/128,no-resolve'
-  - 'IP-CIDR6,2402:4e00:c022:700::11/128,no-resolve
-
-  # 支付宝
-  - 'DOMAIN,openapi.alipay.com'
-  - 'DOMAIN,mapi.alipay.com'
-
-  # 云闪付 / 银联
-  - 'DOMAIN,acpgateway.cup.com.cn'
-  - 'DOMAIN,filedownload.cup.com.cn'
-  - 'DOMAIN,gateway.95516.com'
-  - 'DOMAIN,filedownload.95516.com'
-  - 'DOMAIN,open.95516.com'
-
-  # 抖音支付
-  - 'DOMAIN,developer.toutiao.com'
-
-  # 美团支付
-  - 'DOMAIN,api-open-cater.meituan.com'
-  - 'DOMAIN,eps.meituan.com'
-
-  # QQ钱包 / 财付通
-  - 'DOMAIN-SUFFIX,qpay.qq.com'
-  - 'DOMAIN-SUFFIX,qpay.tenpay.com'
-  - 'DOMAIN-SUFFIX,qpay.tenpay.cn'
-
-  # 翼支付
-  - 'DOMAIN-SUFFIX,bestpay.com.cn'
-
-  # 数字人民币
-  - 'DOMAIN-SUFFIX,ecny.pbcdci.cn'
-  - 'DOMAIN,pbcdci.cn'
-
   # 银联商务
   - 'DOMAIN,api-mop.chinaums.com'
   - 'DOMAIN,api-mop-wh.open.chinaums.com'
   - 'DOMAIN,open.chinaums.com'
-
-  # 招行
-  - 'DOMAIN,open.cmbchina.com'
-  - 'DOMAIN,openapi.cmbchina.com'
-
-  # 工行
-  - 'DOMAIN,gw.open.icbc.com.cn'
-  - 'DOMAIN,open.icbc.com.cn'
-
-  # 中行
-  - 'DOMAIN,open.bankofchina.com'
-  - 'DOMAIN,open.boc.cn'
 
   # 小米安装包检测
   - 'DOMAIN,api.installer.xiaomi.com'
