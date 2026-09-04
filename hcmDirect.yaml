@@ -1,4 +1,7 @@
 payload:
+  # WireGuard
+  - 'DST-PORT,51820'
+
   # 自家入口域名
   - 'DOMAIN-SUFFIX,lyx.fan'
   
