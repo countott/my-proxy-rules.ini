@@ -21,7 +21,7 @@ payload:
   - 'DOMAIN-SUFFIX,accio.com'
 
   # Plex 直连域名
-  - 'DOMAIN-SUFFIX,plex.direct'
+  #- 'DOMAIN-SUFFIX,plex.direct'
 
   # 醒图
   #- 'DOMAIN,mon.zijieapi.com'
