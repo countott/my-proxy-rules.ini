@@ -1,0 +1,20 @@
+payload:
+  # 通过回家线路访问的家庭服务
+  - 'DOMAIN,unraid.lyx.fan'
+  - 'DOMAIN,router.lyx.fan'
+  - 'DOMAIN,clash.lyx.fan'
+  - 'DOMAIN,drive.lyx.fan'
+  - 'DOMAIN,tv.lyx.fan'
+  - 'DOMAIN,us.lyx.fan'
+  - 'DOMAIN,hcm.lyx.fan'
+
+  # 家庭内网
+  - 'IP-CIDR,192.168.7.0/24,no-resolve'
+  - 'IP-CIDR6,fddd::/48,no-resolve'
+
+  # WireGuard 隧道内网
+  - 'IP-CIDR,10.0.0.0/24,no-resolve'
+  - 'IP-CIDR6,fd00::/64,no-resolve'
+
+  # 单标签主机名：解析后的地址属于家庭 IPv4 局域网时才回家
+  - 'AND,((DOMAIN-REGEX,^[^.]+$),(IP-CIDR,192.168.7.0/24))'
