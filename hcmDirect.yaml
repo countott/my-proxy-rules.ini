@@ -1,32 +1,37 @@
 payload:
-  # WireGuard
-  - 'DST-PORT,51820'
+  # 家庭公网入口：根域、Plex、相册、订阅
+  - 'DOMAIN,lyx.fan'
+  - 'DOMAIN,plex.lyx.fan'
+  - 'DOMAIN,photo.lyx.fan'
+  - 'DOMAIN,sub.lyx.fan'
 
-  # 自家入口域名
-  - 'DOMAIN-SUFFIX,lyx.fan'
-  
+  # 已通过 WireGuard 回家的客户端，避免再次送入回家隧道
+  - 'SRC-IP-CIDR,10.0.0.0/24'
+  - 'SRC-IP-CIDR,fd00::/64'
+
+  # 家中局域网访问家庭内网
+  - 'AND,((SRC-IP-CIDR,fddd::/60),(IP-CIDR6,fddd::/48))'
+  - 'AND,((SRC-IP-CIDR,192.168.7.0/24),(IP-CIDR,192.168.7.0/24))'
+
   # 公司内网
   #- 'DOMAIN,aliding-log-cn-hangzhou.log.aliyuncs.com'
   #- 'DOMAIN,beacon-api.aliyuncs.com'
   #- 'DOMAIN-SUFFIX,log.aliyuncs.com'
   - 'DOMAIN-SUFFIX,alibaba-inc.com'
-  - 'DOMAIN-SUFFIX,accio.com'  
-  
+  - 'DOMAIN-SUFFIX,accio.com'
+
   # Plex 直连域名
   - 'DOMAIN-SUFFIX,plex.direct'
 
-  # Figma Site
-  #- 'DOMAIN-SUFFIX,figma.site'
-  
   # 醒图
   #- 'DOMAIN,mon.zijieapi.com'
 
   # 内网穿透
   - 'DOMAIN-SUFFIX,88frp.com'
-  
-  # Rustdesk
-  - 'DST-PORT,21115-21119'
-  - 'DOMAIN-SUFFIX,rustdesk.com'
+
+  # RustDesk
+  #- 'DST-PORT,21115-21119'
+  #- 'DOMAIN-SUFFIX,rustdesk.com'
 
   # 银联商务
   - 'DOMAIN,api-mop.chinaums.com'
@@ -35,4 +40,3 @@ payload:
 
   # 小米安装包检测
   - 'DOMAIN,api.installer.xiaomi.com'
-
