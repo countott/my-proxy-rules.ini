@@ -1,6 +1,5 @@
 payload:
-  # NAS加速
-  - 'SRC-IP-CIDR,192.168.7.7/32'
 
-  # 游戏设备
-  #- 'SRC-IP-CIDR,192.168.7.7/32'
+  # 主机全局
+  - 'SRC-IP-CIDR,192.168.7.7/32,no-resolve'
+  - 'SRC-IP-CIDR,fddd::7/128,no-resolve'
